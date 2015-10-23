@@ -1,0 +1,2 @@
+USE[master];
+ CREATE LOGIN [sooraj71] WITH PASSWORD=N'123',DEFAULT_DATABASE=[turisam]

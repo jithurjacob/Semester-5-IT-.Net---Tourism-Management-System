@@ -1,0 +1,154 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ADMasterPage.master.cs" Inherits="Admin_ADMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head runat="server">
+
+<script src="../JScript.js" type="text/javascript"></script>
+<link href="../style.css" type="text/css" rel="Stylesheet" />
+    <title>Kerala Tourism Management</title>
+    <style >
+    
+    body
+    {
+        background-image: url(../images/bg.png);
+        
+        }
+    </style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+    <style type="text/css">
+        .gal
+        {
+            height: 161px;
+            width: 219px;
+        }
+        .spec
+        {
+            width: 49px;
+        }
+        .style3
+        {
+            width: 100%;
+            font-weight: 700;
+            margin-top: 0px;
+        }
+        .style17
+        {
+            width: 100%;
+            font-weight: 700;
+            font-size: xx-large;
+            margin-right: 0px;
+        }
+        .style18
+        {
+            text-align: center;
+            font-size: larger;
+            font-family: Calibri;
+            font-weight: normal;
+        }
+        .style31
+        {
+            height: 23px;
+        }
+        .style41
+        {
+            width: 111px;
+            text-align: center;
+        }
+        .style48
+        {
+            width: 143px;
+            text-align: center;
+        }
+        .style60
+        {
+            width: 115px;
+            text-align: center;
+        }
+        .style63
+        {
+            width: 121px;
+            text-align: center;
+        }
+        .style66
+        {
+            width: 139px;
+            text-align: center;
+        }
+        .style69
+        {
+            height: 40px;
+        }
+        .style70
+        {
+            text-align: center;
+        }
+        .style71
+        {
+            text-decoration: none;
+        }
+        .style72
+        {
+            width: 81px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="nav-wrap">
+      <ul class="group" id="example-one">
+                         <li>       <asp:HyperLink CssClass="linktext" ID="HyperLink3" runat="server" 
+                                   NavigateUrl="~/Admin/HM.aspx" >HOME</asp:HyperLink></li>
+                            
+                            <li>     <asp:HyperLink CssClass="linktext" ID="HyperLink1" runat="server" 
+                                    
+                                    NavigateUrl="~/Admin/PLACE1.aspx" >CHANGE PASSWORD</asp:HyperLink>
+                           </li>
+
+                           <li>     <asp:HyperLink CssClass="linktext" ID="HyperLink4" runat="server" 
+                                    
+                                    NavigateUrl="~/Admin/PLACE1.aspx" >ADD PLACE</asp:HyperLink>
+                           </li><li>
+           
+              <asp:HyperLink CssClass="linktext" ID="HyperLink2" runat="server" 
+                                    NavigateUrl="~/Admin/PLACE1.aspx" >PLACES</asp:HyperLink>
+     
+               </li><li>
+                          
+           
+              <asp:HyperLink CssClass="linktext" ID="HyperLink9" runat="server" 
+                                    NavigateUrl="~/Admin/update PLACE1.aspx" >UPDATE PLACES</asp:HyperLink>
+     </li>
+               
+                           
+                               <!-- <asp:HyperLink ID="HyperLink5" runat="server" 
+                                    style="color: #000066" NavigateUrl="~/Admin/VEC.aspx" CssClass="style71">VECHILE</asp:HyperLink>
+                                <asp:HyperLink ID="HyperLink7" runat="server" 
+                                    style="color: #000066; background-color: #FFFFFF;" 
+                                    NavigateUrl="~/Admin/Hotels.aspx" CssClass="style71">ADD HOTEL</asp:HyperLink>-->
+                            
+                              <%--  <asp:HyperLink ID="HyperLink8" runat="server" 
+                                    style="color: #000066; background-color: #FFFFFF;" 
+                                    NavigateUrl="~/Admin/Update Hotels.aspx" CssClass="style71">UPDATE HOTEL</asp:HyperLink>--%>
+                         <li>   
+                                <asp:HyperLink CssClass="linktext" ID="HyperLink6" runat="server" 
+                                    NavigateUrl="~/Admin/logout.aspx" >LOG OUT</asp:HyperLink>
+                           </li>
+                           </ul>
+         
+   
+  </div>
+  
+       <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <asp:ScriptManager ID="scriptmgr1" runat="server" ><Scripts><asp:ScriptReference Path="~/JScript.js" /></Scripts></asp:ScriptManager>
+                </asp:ContentPlaceHolder>
+         
+    </form>
+</body>
+    
+</html>
